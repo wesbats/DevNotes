@@ -1,40 +1,53 @@
 # 📝 DevNotes
 
-O **DevNotes** é uma aplicação de anotações voltada para desenvolvedores em aprendizado. Ele funciona como um caderno digital pessoal, permitindo que o usuário organize suas próprias “colas” e referências técnicas, separadas por categorias como HTML, CSS, JavaScript, etc.
+O **DevNotes** é uma aplicação de anotações voltada para desenvolvedores em aprendizado.  
+Funciona como um caderno digital pessoal, permitindo que o usuário organize suas próprias “colas” e referências técnicas, separadas por categorias como "HTML, CSS, JavaScript", entre outras.
 
-Este projeto está sendo desenvolvido com foco em aprendizado e organização pessoal, utilizando tecnologias reais do mercado.
+---
 
 ## 🚀 Objetivo
-Oferecer uma ferramenta rápida, leve e pratica para anotações técnicas de desenvolvedores, ajudando no aprendizado e na produtividade do dia a dia de estudo.
+Oferecer uma ferramenta rápida, leve e prática para anotações técnicas, auxiliando no aprendizado e na produtividade diária dos desenvolvedores.
 
-## 🧱 MVP – Funcionalidades iniciais
-- Criar, editar e excluir grupos (categorias)
-- Criar, editar e excluir anotações dentro dos grupos
-- Barra de busca global para localizar qualquer conteúdo
-- Interface limpa e leve
+---
+
+## 🎨 Protótipo Figma
+![Image](https://github.com/user-attachments/assets/81734823-b7d0-4a53-8a85-cdc3c7f3e79a)
+
+---
+
+## 🔥 Funcionalidades da aplicação
+- Sistema de autenticação (Login e gerenciamento de usuários)
+- Criação, edição e exclusão de grupos (categorias)
+- Criação, edição e exclusão de anotações dentro dos grupos
+- Barra de busca global para localizar rapidamente qualquer conteúdo
+- Interface limpa, responsiva e leve
 - Armazenamento local (SQLite)
-- Dados preenchidos pelo próprio usuário (sem conteúdo prévio)
+- Dados preenchidos exclusivamente pelo usuário (sem conteúdo prévio)
+- Importação e exportação de dados em formato JSON
+- Personalização de ícones por categoria
+- Drag & drop de notas entre categorias para reordenar
+
+---
 
 ## 🌱 Funcionalidades Futuras
-- Login
-- Drag & drop de notas entre categorias
-- Personalização de ícones por categoria
-- Importação/exportação de dados em JSON
-- Migração futura para React
-- Versão Android com as mesmas anotações
+- Versão mobile (Android) com sincronização de anotações
+- Backup automático na nuvem
+- Modo leitura para anotações extensas
+- Temas customizáveis (além de dark/light)
+
+---
 
 ## 🧰 Stacks utilizadas
 
 ### MVP
-- Electron
-- Vite
-- Vanilla JS
-- Tailwind CSS
-- SQLite (banco local)
+- **Frontend Web/Desktop**: React + Vite + Tailwind CSS
+- **Desktop App**: Electron
+- **Backend**: Node.js + Express (API REST)
+- **Banco de Dados Local**: SQLite
 
-### Futuro
-- React
-- React Native ou Capacitor (mobile)
+---
 
 ## ⚠️ Aviso
-Este projeto está em desenvolvimento e é parte de um estudo pessoal. Feedbacks são sempre bem-vindos!
+Este projeto está em desenvolvimento e faz parte de um estudo pessoal com o objetivo de consolidar conhecimentos em desenvolvimento Full Stack.  
+Feedbacks e contribuições são sempre muito bem-vindos!
+
