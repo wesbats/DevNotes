@@ -11,8 +11,8 @@ function createWindow() {
     : join(__dirname, "../../build/devnotes-ico.png");
 
   const win = new BrowserWindow({
-    width: 1280,
-    height: 800,
+    width: 1070,
+    height: 602,
     icon: iconPath,
     webPreferences: {
       preload: join(__dirname, "preload.js"),

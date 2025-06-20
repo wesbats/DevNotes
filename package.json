@@ -4,11 +4,12 @@
   "version": "0.0.1",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "npm run electron",
+    "vite": "vite",
     "build": "tsc -b && vite build",
-    "electron:dev": "concurrently \"vite\" \"wait-on http://localhost:5173 && cross-env NODE_ENV=development electron .\"",
+    "electron": "concurrently \"vite\" \"wait-on http://localhost:5173 && cross-env NODE_ENV=development electron .\"",
     "electron:build": "tsc -b && vite build && cross-env NODE_ENV=production electron .",
-    "build:electron": "npm run build && electron-builder",
+    "builder:electron": "npm run build && electron-builder",
     "lint": "eslint .",
     "preview": "vite preview"
   },
@@ -48,13 +49,16 @@
     "files": [
       "dist/**",
       "src/electron/**",
-      "build/**/*"
+      "build/**/*",
+      "!**/*.dylib",
+      "!**/darwin/**"
     ],
     "asar": true,
     "win": {
       "target": "nsis",
-      "icon": "build/devnotes-ico.png",
-      "signAndEditExecutable": false
+      "icon": "build/icon.ico",
+      "signAndEditExecutable": true,
+      "requestedExecutionLevel": "requireAdministrator"
     },
     "nsis": {
       "oneClick": false,
