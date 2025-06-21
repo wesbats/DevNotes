@@ -9,7 +9,7 @@
     "build": "tsc -b && vite build",
     "electron": "concurrently \"vite\" \"wait-on http://localhost:5173 && cross-env NODE_ENV=development electron .\"",
     "electron:build": "tsc -b && vite build && cross-env NODE_ENV=production electron .",
-    "builder:electron": "npm run build && electron-builder",
+    "builder:electron": "npm run build && electron-builder --win --x64",
     "lint": "eslint .",
     "preview": "vite preview"
   },
@@ -56,7 +56,7 @@
     "asar": true,
     "win": {
       "target": "nsis",
-      "icon": "build/icon.ico",
+      "icon": "./build/icon.ico",
       "signAndEditExecutable": true,
       "requestedExecutionLevel": "requireAdministrator"
     },

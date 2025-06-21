@@ -7,8 +7,8 @@ const __dirname = dirname(__filename);
 
 function createWindow() {
   const iconPath = app.isPackaged
-    ? join(process.resourcesPath, "./build/devnotes-ico.png")
-    : join(__dirname, "../../build/devnotes-ico.png");
+    ? join(process.resourcesPath, "./build/icon.ico")
+    : join(__dirname, "../../build/icon.ico");
 
   const win = new BrowserWindow({
     width: 1070,
